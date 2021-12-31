@@ -6,11 +6,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint:prettier": "prettier --check --ignore-path .gitignore \"!package-lock.json\" --plugin-search-dir=. ./**/*.{json,css,js,ts,cjs,svelte}",
+    "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" --plugin-search-dir=. ./**/*.{json,css,js,ts,cjs,svelte}"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
     "@tsconfig/svelte": "^2.0.1",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.1",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.7",
     "svelte-preprocess": "^4.9.8",

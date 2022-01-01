@@ -20,6 +20,7 @@ module.exports = {
     extraFileExtensions: ['.svelte'],
   },
   plugins: ['svelte3', '@typescript-eslint'],
+  ignorePatterns: ['.eslintrc.*', 'vite.config.*', 'svelte.config.*'],
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
@@ -36,7 +37,6 @@ module.exports = {
     },
   ],
   settings: {
-    // eslint-disable-next-line global-require
     'svelte3/typescript': () => require('typescript'), // pass the TypeScript package to the Svelte plugin
     // OR
     // 'svelte3/typescript': true, // load TypeScript as peer dependency

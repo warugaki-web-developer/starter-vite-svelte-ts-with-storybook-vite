@@ -27,24 +27,24 @@
   }
 
   main {
-    text-align: center;
     padding: 1em;
     margin: 0 auto;
+    text-align: center;
   }
 
   img {
-    height: 16rem;
     width: 16rem;
+    height: 16rem;
   }
 
   h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
+    max-width: 14rem;
+    margin: 2rem auto;
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
+    color: #ff3e00;
+    text-transform: uppercase;
   }
 
   p {

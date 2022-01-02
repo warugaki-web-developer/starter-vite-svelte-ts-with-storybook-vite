@@ -15,7 +15,7 @@
     "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./**/*.{css,svelte}",
     "lint:all": "run-s lint:eslint lint:stylelint lint:prettier",
     "fix:all": "run-s fix:eslint fix:stylelint fix:prettier",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook --ci -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {

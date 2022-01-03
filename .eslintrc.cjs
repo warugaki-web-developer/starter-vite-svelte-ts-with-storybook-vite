@@ -29,15 +29,19 @@ module.exports = {
         devDependencies: true, // devDependenciesのimportを許可
       },
     ],
-    'import/no-mutable-exports': 'off',
   },
   overrides: [
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
+      rules: {
+        'import/no-mutable-exports': 'off',
+        'import/prefer-default-export': 'off',
+      },
     },
   ],
   settings: {
+    'svelte3/ignore-styles': () => true,
     'svelte3/typescript': () => require('typescript'), // pass the TypeScript package to the Svelte plugin
     // OR
     // 'svelte3/typescript': true, // load TypeScript as peer dependency

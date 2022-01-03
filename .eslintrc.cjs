@@ -39,6 +39,7 @@ module.exports = {
     },
   ],
   settings: {
+    'svelte3/ignore-styles': () => true,
     'svelte3/typescript': () => require('typescript'), // pass the TypeScript package to the Svelte plugin
     // OR
     // 'svelte3/typescript': true, // load TypeScript as peer dependency
